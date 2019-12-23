@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="viewmodel"
+                  type="net.simplifiedcoding.ui.home.HomeViewModel"/>
+    </data>
+
+    <RelativeLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.home.HomeActivity">
+
+        <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbaruser"
+                android:background="#00BCD4">
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_kampus"
+                        android:id="@+id/logousergundar"
+                        />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Dashboard User"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/logousergundar"
+                        android:fontFamily="serif"
+                        android:textColor="#000"
+                        android:textSize="18sp"/>
+
+                <ImageView
+                        android:onClick="@{(v) -> viewmodel.logout(v)}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnlogoutadmin"
+                        android:src="@drawable/ic_exit_to_app_black_24dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+                android:src="@drawable/kampus"
+                android:id="@+id/imgKampus"
+                android:layout_below="@+id/toolbaruser"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"/>
+
+        <RelativeLayout
+                android:background="@drawable/background2"
+                android:layout_marginTop="270dp"
+                android:layout_width="match_parent"
+                android:layout_height="600dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                android:id="@+id/centerprofile"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                    android:onClick="@{(v) -> viewmodel.profil(v)}"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_toLeftOf="@+id/centerprofile"
+                    android:id="@+id/linearprofile"
+                    android:background="@drawable/button_oval"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profil"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Profile"
+                        android:layout_gravity="center"
+                        android:fontFamily="serif"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:onClick="@{(v) -> viewmodel.jurusan(v)}"
+                    android:layout_toRightOf="@+id/centerprofile"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/button_oval"
+                    android:id="@+id/linearjurusan"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/jurusan"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jurusan"
+                        android:layout_gravity="center"
+                        android:fontFamily="serif"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+<!--            <TextView-->
+<!--                    android:text="@{viewmodel.user.email}"-->
+<!--                    tools:text="probelalkhan@gmail.com"-->
+<!--                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:id="@+id/textViewEmail"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--            <Button-->
+<!--                    android:onClick="@{(v) -> viewmodel.logout(v)}"-->
+<!--                    android:text="Logout"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_below="@id/textViewEmail"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+    </RelativeLayout>
+
+</layout>

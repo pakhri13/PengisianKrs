@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/admintoolbar"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/logogundar"
+            android:src="@drawable/icon_kampus"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:text="Admin Site"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/logogundar"
+            android:fontFamily="serif"
+            android:textColor="#000"
+            android:textSize="18sp"/>
+
+
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

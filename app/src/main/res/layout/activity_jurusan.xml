@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbaruser"
+            android:background="#00BCD4">
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_kampus"
+                    android:id="@+id/logousergundar"
+                    />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Dashboard User"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/logousergundar"
+                    android:fontFamily="serif"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnlogoutuser"
+                    android:src="@drawable/ic_exit_to_app_black_24dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/centeruser"/>
+
+    <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/button_oval"
+            android:id="@+id/linearSI"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/centeruser"
+            android:layout_centerVertical="true">
+
+        <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/komputer3"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sistem Informasi"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:textColor="#00BCD4"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="@drawable/button_oval"
+            android:id="@+id/linearTI"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/centeruser"
+            android:layout_centerVertical="true">
+
+        <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/komputer3"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teknik Infomatika"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:textColor="#00BCD4"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

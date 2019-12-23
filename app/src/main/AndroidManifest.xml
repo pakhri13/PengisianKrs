@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="net.simplifiedcoding">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+            android:name=".FirebaseApplication"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".ui.home.HomeActivity">
+        </activity>
+        <activity android:name=".ui.auth.SignupActivity">
+        </activity>
+        <activity android:name=".ui.auth.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Biodata.IsiBiodataActivity"/>
+        <activity android:name=".ui.Admin.AdminActivity"/>
+        <activity android:name=".ui.Admin.TeknikInformatika.TeknikActivity"/>
+        <activity android:name=".ui.Admin.SistemInformasi.SistemActivity"/>
+        <activity android:name=".ui.home.jurusan.JurusanActivity"/>
+        <activity android:name=".ui.User.SistemInformasi.SistemInformasiActivity"/>
+        <activity android:name=".ui.User.TeknikInformatika.TeknikInformatikaActivity"/>
+        <activity android:name=".ui.home.profil.ProfilActivity"/>
+        <activity android:name=".ui.User.CetakKrsActivity"/>
+        <activity android:name=".ui.User.DetailKrsActivity"/>
+    </application>
+
+</manifest>

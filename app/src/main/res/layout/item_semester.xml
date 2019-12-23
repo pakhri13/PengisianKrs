@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:id="@+id/field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_namamatkul3"
+                android:layout_alignParentStart="true"
+                android:text="Nama Mata Kuliah"
+                android:fontFamily="serif"
+                android:textSize="18sp"/>
+
+        <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_sks3"
+                android:layout_toRightOf="@+id/txt_namamatkul3"
+                android:text="SKS"
+                android:fontFamily="serif"
+                android:textSize="18sp"
+                android:layout_marginStart="5dp"
+                android:gravity="center"/>
+        <ImageView
+                android:id="@+id/deletematkul"
+                android:src="@drawable/ic_delete"
+                android:layout_alignParentEnd="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+    </RelativeLayout>
+
+    <View
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+            android:id="@+id/admin"
+            layout="@layout/admin_toolbar"/>
+
+    <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/judul"
+            android:layout_below="@+id/admin"
+            android:text="Teknik Informatika"
+            android:textSize="70px"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:layout_below="@+id/judul"
+            android:id="@+id/field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_namamatkul1"
+                android:layout_alignParentStart="true"
+                android:text="Nama Mata Kuliah"
+                android:fontFamily="serif"
+                android:textSize="18sp"/>
+        <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_namadosen1"
+                android:layout_toRightOf="@+id/txt_namamatkul1"
+                android:layout_marginStart="5dp"
+                android:text="Nama Dosen"
+                android:textSize="18sp"
+                android:fontFamily="serif"/>
+
+        <TextView
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_sks1"
+                android:layout_toRightOf="@+id/txt_namadosen1"
+                android:text="SKS"
+                android:fontFamily="serif"
+                android:textSize="18sp"
+                android:layout_marginStart="5dp"
+                android:gravity="center_horizontal"/>
+        <View
+                android:layout_marginTop="35dp"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+    </RelativeLayout>
+
+    <ListView
+            android:id="@+id/lv_semester1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/field"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:maxImageSize="60dp"
+        android:id="@+id/fab_add_1"
+        android:src="@drawable/add50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="match_parent"
+        tools:context=".Biodata.IsiBiodataActivity">
+
+
+    <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:elevation="5dp"
+            android:src="@drawable/icon_kampus" />
+
+    <RelativeLayout
+            android:id="@+id/Rv"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/background"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+        <TextView
+                android:id="@+id/textbiodata"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:fontFamily="serif"
+                android:text="Isi Form Untuk Melengkapi Registrasi"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/txt_nama"
+                android:text="Nama"
+                android:fontFamily="serif"
+                android:layout_marginBottom="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:id="@+id/edt_nama"
+                android:layout_below="@+id/txt_nama"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/ic_account"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:hint="Nama"
+                android:background="@drawable/edittext"
+                android:padding="5dp"
+                android:inputType="textPersonName"/>
+        <TextView
+                android:id="@+id/txt_npm"
+                android:layout_below="@+id/edt_nama"
+                android:text="Password"
+                android:fontFamily="serif"
+                android:layout_marginBottom="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:singleLine="true"
+                android:id="@+id/edt_npm"
+                android:layout_below="@+id/txt_npm"
+                android:fontFamily="serif"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/ic_npm"
+                android:hint="NPM"/>
+        <TextView
+                android:id="@+id/txt_lahir"
+                android:layout_below="@+id/edt_npm"
+                android:text="Tanggal Lahir"
+                android:fontFamily="serif"
+                android:layout_marginBottom="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:singleLine="true"
+                android:id="@+id/edt_lahir"
+                android:layout_below="@+id/txt_lahir"
+                android:fontFamily="serif"
+                android:inputType="date"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/ic_date"
+                android:hint="DD/MM/YYYY"/>
+        <TextView
+                android:id="@+id/txt_choose"
+                android:layout_below="@+id/edt_lahir"
+                android:text="Foro Profile"
+                android:fontFamily="serif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_image"
+                android:layout_below="@+id/txt_choose"
+                android:text="Choose File"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="serif"
+                android:background="@drawable/button"/>
+        <ImageView
+                android:id="@+id/imgProfil"
+                android:layout_below="@+id/btn_image"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+    </RelativeLayout>
+
+    <ImageButton
+            android:id="@+id/fab_next"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_oval"
+            android:src="@drawable/ic_forward"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+
+</RelativeLayout>

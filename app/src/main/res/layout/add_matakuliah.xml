@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/edt_matakuliah"
+        android:text="Mata Kuliah"
+            android:textColor="@color/colorAccent"
+        android:fontFamily="serif"
+        android:textSize="20sp"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_matakuliah"
+            android:hint="Nama Mata Kuliah"
+            android:textColor="@color/colorAccent"
+            android:padding="16dp"
+            android:fontFamily="serif"
+            android:singleLine="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/edt_nama_dosen"
+            android:text="Nama Dosen"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="serif"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_nama_dosen"
+            android:hint="Nama Mata Kuliah"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent"
+            android:padding="16dp"
+            android:fontFamily="serif"
+            android:singleLine="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/edt_sks"
+            android:text="SKS"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="serif"
+            android:textSize="20sp"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_sks"
+            android:hint="SKS"
+            android:textColor="@color/colorAccent"
+            android:inputType="number"
+            android:padding="16dp"
+            android:fontFamily="serif"
+            android:singleLine="true"/>
+</LinearLayout>
